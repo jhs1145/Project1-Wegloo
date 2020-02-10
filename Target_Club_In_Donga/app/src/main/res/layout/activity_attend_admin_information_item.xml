@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/activity_attend_admin_information_item_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/activity_attend_admin_information_item_textview_name"
+            style="@style/Content_Text_Style"
+            android:layout_weight="2"
+            android:text="이름" />
+
+        <TextView
+            android:id="@+id/activity_attend_admin_information_item_textview_phone_number"
+            style="@style/Content_Classification_Text_Style"
+            android:text="전화번호"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_btn"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center"/>
+
+    </LinearLayout>
+
+    <View style="@style/Line_Style" />
+
+</LinearLayout>

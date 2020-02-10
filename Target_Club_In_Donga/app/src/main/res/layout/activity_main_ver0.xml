@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_artborad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.example.target_club_in_donga.home_viewpager.HomeActivityView">
+
+    <FrameLayout
+        android:id="@+id/home_frame_board"
+        android:background="@drawable/ripper_ver0"
+        android:elevation="2dp"
+
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.385464581"
+        app:layout_constraintHorizontal_bias="0.167465501"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.19375"
+        app:layout_constraintVertical_bias="0.308854167"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_layout_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/home_button_board"
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+                android:background="@drawable/ic_icon_album_ver0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.483870968"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.429594272" />
+
+            <TextView
+                android:id="@+id/home_textview_board"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.685464581"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.19375"
+                app:layout_constraintVertical_bias="0"
+                android:text="자유 게시판"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="1sp"
+                android:gravity="center"
+
+                android:autoSizeTextType="uniform"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_button_board"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/home_frame_calender"
+        android:background="@drawable/ripper_ver0"
+        android:elevation="2dp"
+
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.385464581"
+        app:layout_constraintHorizontal_bias="0.827465501"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.19375"
+        app:layout_constraintVertical_bias="0.308854167"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_layout_calender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/home_button_calender"
+                android:background="@drawable/ic_calender_ver0"
+
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.429594272"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.483870968"
+                app:layout_constraintVertical_bias="0.5"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/home_textview_calendar"
+
+
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.585464581"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.19375"
+                app:layout_constraintVertical_bias="0"
+                android:text="모임 일정"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="1sp"
+                android:gravity="center"
+
+                android:autoSizeTextType="uniform"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_button_calender"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_frame_vote"
+        android:background="@drawable/ripper_ver0"
+        android:elevation="2dp"
+
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.385464581"
+        app:layout_constraintHorizontal_bias="0.167465501"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.19375"
+        app:layout_constraintVertical_bias="0.564354167"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_layout_vote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/home_button_vote"
+                android:background="@drawable/ic_vote_ver0"
+
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.429594272"
+                app:layout_constraintVertical_bias="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.483870968"
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/home_textview_vote"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.385464581"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.19375"
+                app:layout_constraintVertical_bias="0"
+                android:text="투표"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="1sp"
+                android:gravity="center"
+
+                android:autoSizeTextType="uniform"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_button_vote"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_frame_attendance"
+        android:background="@drawable/ripper_ver0"
+        android:elevation="2dp"
+
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.385464581"
+        app:layout_constraintHorizontal_bias="0.827465501"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.19375"
+        app:layout_constraintVertical_bias="0.564354167"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_layout_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/home_button_attendance"
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+                android:background="@drawable/ic_attendance_ver0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.483870968"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.429594272" />
+
+            <TextView
+                android:id="@+id/home_textview_attendance"
+
+                android:layout_width="0dp"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.385464581"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.19375"
+                app:layout_constraintVertical_bias="0"
+                android:text="출석"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeMinTextSize="1sp"
+                android:gravity="center"
+
+                android:autoSizeTextType="uniform"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_button_attendance" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/home_button_menu"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:background="@drawable/ic_menu_24px"
+        app:layout_constraintBottom_toBottomOf="@+id/home_button_timeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137465501"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/home_button_timeline"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.090036799"/>
+
+    <ImageButton
+        android:id="@+id/home_button_timeline"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:background="@drawable/ic_notifications_24px"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.055833333"
+        app:layout_constraintHorizontal_bias="0.864305428"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.05925"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/home_textview_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="20dp"
+        android:autoSizeMinTextSize="1sp"
+
+        android:autoSizeTextType="uniform"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.080208333"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171875"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.7" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_layout_notice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.055416667"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home_frame_attendance"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/home_frame_vote"
+        app:layout_constraintVertical_bias="0.715"
+        >
+
+        <TextView
+            android:gravity="center|left"
+            android:id="@+id/home_textview_new_notice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeMaxTextSize="20dp"
+            android:autoSizeMinTextSize="1sp"
+
+            android:autoSizeTextType="uniform"
+            android:text="최근 공지사항"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/home_button_quick"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:background="@drawable/ic_keyboard_arrow_right_24px_orange"
+            app:layout_constraintBottom_toBottomOf="@+id/home_textview_new_notice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/home_textview_new_notice"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/home_view_logo"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:background="@drawable/wegloo_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.055552083"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065796875"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.356338546" />
+
+    <LinearLayout
+        android:id="@+id/home_notice_layout1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.11"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/home_notice_title1"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="12sp"
+                android:id="@+id/home_notice_writer1"
+
+                android:paddingLeft="15dp" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/home_notice_date1"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:paddingRight="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_notice_layout2"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.11"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.9"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/home_notice_title2"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="12sp"
+                android:id="@+id/home_notice_writer2"
+
+                android:paddingLeft="15dp" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/home_notice_date2"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:paddingRight="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

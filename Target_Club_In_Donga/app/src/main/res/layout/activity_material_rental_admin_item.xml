@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="5dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:id="@+id/activity_material_rental_admin_item_linearlayout"
+    android:background="@drawable/layout_rounded">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_material_rental_admin_item_imageview_recyclerview_image"
+            android:layout_width="100dp"
+            android:background="@drawable/picture_que_ver0"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_height="100dp"
+
+            app:layout_constraintVertical_bias="0.4"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight="0.3"
+            android:id="@+id/activity_material_rental_admin_item_textview_recyclerview_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lottedreammedium"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="6dp"
+            android:text="물품명" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="대여 중인 사람 : "/>
+
+            <TextView
+                android:id="@+id/activity_material_rental_admin_item_textview_recyclerview_lender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/lottedreammedium"
+                android:textColor="#000000"
+                android:layout_marginStart="10dp"
+                android:text="없음" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_gravity="bottom"
+                android:text="반납일 : " />
+            <TextView
+                android:id="@+id/activity_material_rental_admin_item_recyclerview_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/lottedreammedium"
+                android:textColor="#000000"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="bottom"
+                android:text="없음"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
